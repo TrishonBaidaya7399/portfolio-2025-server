@@ -1,12 +1,11 @@
 import express, { Request, Response, NextFunction } from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import dotenv from 'dotenv';
+import 'dotenv/config'
 import adminRoutes from './routes/adminRoutes';
 import contactRoutes from './routes/contactRoutes';
 
-dotenv.config();
-
+require('dotenv').config()
 const app = express();
 
 // Middleware
